@@ -1,0 +1,24 @@
+
+$ORIGIN .
+@	3600	IN	SOA	swamy.institute.	root.swamy.institute.	(
+		2024823317	; serial
+		7200		; refresh
+		3600		; retry
+		86400		; expire
+		3600)		; minimum
+
+
+;; MX Records
+swamy.institute.	300	IN	MX	10	emx.mail.ru.
+
+;; TXT Records
+swamy.institute.	300	IN	TXT	"mailru-the domain: 7PymIvypvqaQ2rvX"
+swamy.institute.	300	IN	TXT	"v=spf1 redirect=_spf.mail.ru"
+mailru._domainkey.swamy.institute.	300	IN	TXT	"v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKWjt4uY6xdVGRtwr3BZTSjGa1QiT6IDeznFlFd3KnqnyfGnJ151YP3kkC791q8lz0u82Lxo0V228/4YYg3LcrBhl++rBC08LOGXrEO7jZUGi1xaX7QTR8z99z7J+THVMIxo7bSMRyWA3Pg9MPFWx6FdQBtVA7eLyLw8MuBmcTpQIDAQAB"
+
+;; CNAME Records
+imap.swamy.institute.	300	IN	CNAME	imap.mail.ru.
+mail.swamy.institute.	300	IN	CNAME	biz.mail.ru.
+smtp.swamy.institute.	300	IN	CNAME	smtp.mail.ru.
+pop.swamy.institute.	300	IN	CNAME	pop.mail.ru.
+www.swamy.institute.	300	IN	CNAME	swamy.institute.
